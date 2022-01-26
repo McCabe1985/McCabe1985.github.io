@@ -1,0 +1,221 @@
+/*custom properties*/
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-heading: 'Poppins', sans-serif;
+    --clr-primary: #8cd5e2;
+    --clr-secondary: #6e9ea7;
+    --clr-light: rgb(223, 247, 255);
+}
+
+/*reset */
+*, *::before, *::after {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*general styles */
+body {
+    background-color: #151b29;
+    color: var(--clr-light);
+    font-family: var(--ff-primary);
+    line-height: 1.6;
+}
+
+.heading {
+    font-family: var(--ff-heading);
+    color: var(--clr-primary);
+}
+
+/*navbar */
+
+a img.logo {
+    align-self: flex-end
+}
+
+.icon {
+    color: var(--clr-primary);
+    font-size: 1.25rem ;
+}
+
+nav.navContainer {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    
+}
+
+ul.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+li.navItem {
+    list-style: none;
+}
+
+ i.icon:hover {
+    color: var(--clr-light);
+}
+
+/*header*/
+
+
+.headerContainer {
+    margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+div.blurb h2 {
+    color: var(--clr-secondary);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+hr {
+    margin-right: 1.5rem;
+    border: none;
+    height: 1px;
+    background-color: var(--clr-primary);
+}
+
+  
+
+/*about me*/
+
+.mainContainer {
+    margin: 0 1.5rem;
+    
+}
+
+section.mainP {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+p.intro {
+    background-color: var(--clr-secondary);
+    padding: 1em 1.5em;
+    border-radius: 1em;
+}
+
+img.myFace {
+    display: none;
+}
+
+
+
+div.skillsText {
+    margin-bottom: 1.5rem;
+    border-bottom: 0.09rem solid  var(--clr-primary);
+}
+
+h2.skillsHeading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--clr-primary);
+}
+
+p.skillsBlurb {
+    color: var(--clr-secondary);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+section.skills {
+    
+    margin-top: 1.5rem;
+}
+
+div.skillsContent {
+    border-bottom: 0.09rem solid  var(--clr-primary);
+}
+
+ul.skillsList {
+    columns: 2;
+    line-height: 2em;
+    list-style: none;
+}
+
+li.skillsItem {
+
+}
+  
+/* Download CV Button */
+section.downloads {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+a.cv {
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--clr-primary);
+    border: 0.075rem solid;
+    padding: 0.5em 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+a.cv:hover {
+    color: white;
+    border-color: var(--clr-light);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--clr-light);
+    transform: translateY(-0.25em);
+}
+    
+
+/*media queries */
+
+@media (min-width: 800px) {
+    /*navbar */
+
+    .icon {
+        font-size: 2.5rem;
+    }
+    hr {
+        width: 30%;
+    }
+
+    /*about me */
+
+
+
+div.mainH2 {
+    margin-left: 12rem;
+}
+
+section.mainP {
+    margin-right: 1.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p.intro {
+    
+    max-width: 40%;
+}
+
+img.myFace {
+    display: block;
+    border-radius: 10%;
+}
+
+
+ul.skillsList {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2em;
+    list-style: none;
+}
+    
+}
